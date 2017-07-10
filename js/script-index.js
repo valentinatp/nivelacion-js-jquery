@@ -12,7 +12,17 @@ $(document).ready( function(){
 */
 function renderHighlightedRecipes(recipesArray) {
 	console.log('Recipes: ', recipesArray);
+	
+	recipesArray.filter(function(el){
+		if(el.highlighted == true){
+			renderRecipe(el);
+		}
+	})
 }
+
+
+
+
 
 /*
 * Función que se encarga de pintar UNA recetas que tenga 
