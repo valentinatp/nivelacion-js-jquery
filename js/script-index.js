@@ -42,4 +42,16 @@ function renderActivity(recipe) {
 	
 }
 
+function ocultarFlecha(){
+	var flecha = document.getElementById("flecha");
+
+	flecha.setAttribute("class", "hidden");
+}
+ocultarFlecha();
+
+function ocultarMenu(){
+	var barras = document.getElementById("barras");
+	barras.setAttribute("class", "hidden");
+}
+ocultarMenu();
 
