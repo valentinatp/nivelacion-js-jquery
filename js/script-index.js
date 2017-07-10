@@ -49,9 +49,11 @@ function ocultarFlecha(){
 }
 ocultarFlecha();
 
-function ocultarMenu(){
-	var barras = document.getElementById("barras");
-	barras.setAttribute("class", "hidden");
+function printNews(){
+	var parrafo = document.getElementById("new");
+	nuevoParrafo = document.createElement('p');
+	var texto = document.createTextNode('nuevas recetas');
+	nuevoParrafo.appendChild(texto);
+	parrafo.appendChild(nuevoParrafo);
 }
-ocultarMenu();
-
+printNews();
